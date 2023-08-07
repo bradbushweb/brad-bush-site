@@ -31,9 +31,10 @@
             max-width: 800px;
             margin: 30px auto; /* Centered the container horizontally */
             padding: 20px;
-            background-color: #ffcc80; /* Darkened Gold */
+            background-color: #e69500; /* Darkened Gold */
             border-radius: 20px; /* Added rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow effect on container */
+            position: relative; /* Added relative position for social media buttons placement */
         }
 
         h2 {
@@ -93,7 +94,7 @@
             display: block;
             width: 100%;
             margin-bottom: 15px;
-            color: #f0a020; /* Gold */
+            color: #e69500; /* Dark Gold */
         }
 
         .contact-form input,
@@ -132,6 +133,29 @@
             transform: translateY(-50%);
         }
 
+        /* Social media buttons */
+        .social-media-buttons {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-media-buttons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #303030; /* Dark Gray */
+            border-radius: 50%;
+            font-size: 20px;
+            color: #e69500; /* Dark Gold */
+            text-decoration: none;
+        }
+
         /* Centered the header button */
         .header-button {
             display: flex;
@@ -151,10 +175,15 @@
         <div class="header-button">
             <a href="#contact" class="button">Contact Me</a>
         </div>
-        <!-- Add social media buttons here with appropriate images and links -->
-        <!-- For example, you can use Font Awesome icons or SVGs for social media logos -->
-        <!-- Example comment: Add Facebook logo here with an anchor link to Brad's Facebook profile -->
-        <!-- Example comment: Add Twitter logo here with an anchor link to Brad's Twitter profile -->
+        <div class="social-media-buttons">
+            <!-- Replace "#" with the actual links to your social media accounts -->
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a> <!-- Replace "#" with the link to Brad's Twitter profile -->
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a> <!-- Replace "#" with the link to Brad's YouTube channel -->
+            <a href="#" title="Steam"><i class="fab fa-steam"></i></a> <!-- Replace "#" with the link to Brad's Steam profile -->
+            <a href="#" title="itch.io"><i class="fab fa-itch-io"></i></a> <!-- Replace "#" with the link to Brad's itch.io profile -->
+            <a href="#" title="Tumblr"><i class="fab fa-tumblr"></i></a> <!-- Replace "#" with the link to Brad's Tumblr page -->
+            <a href="#" title="Reddit"><i class="fab fa-reddit"></i></a> <!-- Replace "#" with the link to Brad's Reddit profile -->
+        </div>
     </header>
 
     <div class="container">
@@ -196,7 +225,7 @@
         </form>
         <!-- Replace "your-email-address@example.com" with your actual email address to receive messages -->
         <!-- Example comment: Update the email address below to your preferred email -->
-        <!-- Note: For the contact form to function, you will need server-side code (e.g., PHP) to handle form submissions. You can submit the form to an email address using PHP's mail() function or use a third-party form submission service. -->
+        <!-- Note: For the contact form to function, you will need server-side code (e.g., PHP) to handle form submissions. You can use PHP's mail() function or third-party form submission services for this purpose. -->
     </div>
 
     <footer>
