@@ -30,10 +30,11 @@
         .container {
             width: 80%;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 80px auto; /* adjust the margin to position the container */
             padding: 20px;
             background-color: #303030; /* lighter grey */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* shadow effect on contact form */
+            border-radius: 10px; /* rounded corners for the container */
         }
 
         .form-group {
@@ -50,12 +51,11 @@
         textarea {
             width: 100%;
             padding: 10px;
-            border: 1px solid #666;
+            border: none;
             border-radius: 5px;
-        }
-
-        textarea {
-            resize: vertical;
+            background-color: #444444; /* lighter grey for fields */
+            color: #f0a020; /* gold */
+            resize: none; /* disable resizing of the text area */
         }
 
         .button {
@@ -93,6 +93,11 @@
 <body>
     <header>
         <h1>Contact Us</h1>
+        <div class="header-button">
+            <a href="/" class="button">Home</a>
+            <a href="/about" class="button">About</a>
+            <a href="/contact" class="button">Contact Us</a>
+        </div>
     </header>
 
     <div class="container">
@@ -107,14 +112,14 @@
             </div>
             <div class="form-group">
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="4" required></textarea>
             </div>
             <button type="submit" class="button">Submit</button>
         </form>
     </div>
 
     <footer>
-        "&copy; 2023 Brad Bush. All rights reserved."
+        &copy; 2023 Brad Bush. All rights reserved.
     </footer>
 </body>
 </html>
