@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #151515;
-            color: #f5f5f5;
+            color: #f0a020; /* Gold */
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -19,6 +19,7 @@
             padding: 20px;
             color: #f5f5f5;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow effect on header */
         }
 
         h1 {
@@ -28,11 +29,11 @@
 
         .container {
             max-width: 800px;
-            margin: 30px auto; /* Added some margin to separate the header from the content */
+            margin: 30px auto; /* Centered the container horizontally */
             padding: 20px;
-            background-color: #f0a020; /* Gold */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow effect */
+            background-color: #ffcc80; /* Darkened Gold */
+            border-radius: 20px; /* Added rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow effect on container */
         }
 
         h2 {
@@ -54,7 +55,6 @@
             width: 100%;
         }
 
-        /* Added hover effect for links */
         a {
             color: #004080; /* Dark Blue */
             text-decoration: none;
@@ -64,7 +64,6 @@
             text-decoration: underline;
         }
 
-        /* Added a simple button style */
         .button {
             background-color: #004080; /* Dark Blue */
             color: #f5f5f5;
@@ -78,6 +77,67 @@
             background-color: #002030; /* Darker shade on hover */
         }
 
+        /* Styling for the contact form */
+        .contact-form {
+            background-color: #202020; /* Darker Gray */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .contact-form label,
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form .button {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            color: #f0a020; /* Gold */
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            background-color: #303030; /* Dark Gray */
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            color: #f5f5f5;
+        }
+
+        .contact-form .button {
+            background-color: #004080; /* Dark Blue */
+        }
+
+        /* Additional styles for unique shapes */
+        .shape-1 {
+            background-color: #202020; /* Darker Gray */
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .shape-2 {
+            background-color: #202020; /* Darker Gray */
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -40px;
+            right: 30%;
+            transform: translateY(-50%);
+        }
+
+        /* Centered the header button */
+        .header-button {
+            display: flex;
+            justify-content: center;
+        }
+
         @media (max-width: 480px) {
             h1 {
                 font-size: 30px;
@@ -88,40 +148,55 @@
 <body>
     <header>
         <h1>Welcome to Brad Bush's Website</h1>
-        <a href="#contact" class="button">Contact Me</a>
+        <div class="header-button">
+            <a href="#contact" class="button">Contact Me</a>
+        </div>
+        <!-- Add social media buttons here with appropriate images and links -->
+        <!-- For example, you can use Font Awesome icons or SVGs for social media logos -->
+        <!-- Example comment: Add Facebook logo here with an anchor link to Brad's Facebook profile -->
+        <!-- Example comment: Add Twitter logo here with an anchor link to Brad's Twitter profile -->
     </header>
 
     <div class="container">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
         <h2>About Me</h2>
         <p>
-            Welcome to my website! I'm Brad Bush, a passionate game designer who created the
-            critically acclaimed RPG game "InnerHidden." With a love for storytelling and immersive gameplay,
-            I aim to create unique experiences that captivate players and take them on unforgettable adventures.
+            Hey there! I'm Brad Bush, the mastermind behind the epic RPG game "InnerHidden."
+            As a game developer and storyteller, I create immersive worlds that take players on
+            unforgettable adventures. My passion for gaming fuels my dedication to crafting
+            unique experiences that leave players craving more.
         </p>
         <p>
-            Whether you're a fellow game enthusiast or a potential collaborator, feel free to reach out to me
-            using the form below. Let's connect and discuss the exciting world of gaming together!
+            Whether you're a fellow gaming enthusiast or a potential collaborator, let's connect!
+            Feel free to reach out to me using the form below. Let's explore the vast universe
+            of gaming together!
         </p>
     </div>
 
-    <div id="contact" class="container">
+    <div id="contact" class="container contact-form">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
         <h2>Contact Me</h2>
         <p>
-            Have a question or want to discuss a project? Don't hesitate to get in touch with me!
-            Fill out the form below, and I'll get back to you as soon as possible.
+            Have a question or an exciting project idea? Let's talk!
+            Fill out the form below, and I'll get back to you promptly.
         </p>
         <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
             <input type="submit" class="button" value="Send Message">
         </form>
+        <!-- Replace "your-email-address@example.com" with your actual email address to receive messages -->
+        <!-- Example comment: Update the email address below to your preferred email -->
+        <!-- Note: For the contact form to function, you will need server-side code (e.g., PHP) to handle form submissions. You can submit the form to an email address using PHP's mail() function or use a third-party form submission service. -->
     </div>
 
     <footer>
