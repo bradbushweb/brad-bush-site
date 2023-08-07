@@ -94,7 +94,16 @@
             color: #e69500; /* dark gold */
             text-decoration: none;
 			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* shadow effect on button */
+			transition: transform, background-color;
+			transition-timing-function: ease;
+			transition-duration: 400ms;
         }
+		
+		.social-media-buttons a:hover {
+			background-color: #ffecb6; /* Lighter color when hovered */
+			color: #303030; /* Darker color when hovered */
+			transform: scale(1.2); /* Increase size on hover */
+		}
 
         /* centered the header button */
         .header-button {
