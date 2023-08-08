@@ -1,134 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Brad Bush | 404</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="Expires" content="0">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #151515;
-            color: #f0a020; /* gold */
-			min-height: 100vh;
-            margin: 0px;
-            padding: 0px;
-            line-height: 1.6;
-			font-size: 16px;
-			text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* shadow effect on text */
-        }
+    <head>
+        <title>Brad Bush | 404</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #151515;
+                color: #f0a020;
+                /* gold */
+                min-height: 100vh;
+                margin: 0px;
+                padding: 0px;
+                line-height: 1.6;
+                font-size: 16px;
+                text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+                /* shadow effect on text */
+            }
 
-        header {
-            background-color: #541c11; /* dark red */
-            padding: 0px 0px 0px 0px;
-			position: sticky;
-			top: -59px;
-			z-index: 100;
-            color: #f0a020; /* gold */
-            text-align: center;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* shadow effect on header */
-        }
+            header {
+                background-color: #541c11;
+                /* dark red */
+                padding: 0px 0px 0px 0px;
+                position: sticky;
+                top: -59px;
+                z-index: 100;
+                color: #f0a020;
+                /* gold */
+                text-align: center;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                /* shadow effect on header */
+            }
 
-        h1 {
-            font-size: 44px;
-			margin-top: 0px;
-			margin-bottom: 0px;
-			padding: 2px 0px 0px 0px;
-			height: 57px;
-			font-weight: bold;
-			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
+            h1 {
+                font-size: 44px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding: 2px 0px 0px 0px;
+                height: 57px;
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
 
-        footer {
-            background-color: #132d4d; /* dark blue */
-            color: #ffecb6;
-            text-align: center;
-            padding: 10px 0px 10px 0px;
-			margin-top: 60px;
-            position: sticky;
-			top: 100vh;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-			box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2); /* shadow effect on footer */
-        }
+            footer {
+                background-color: #132d4d;
+                /* dark blue */
+                color: #ffecb6;
+                text-align: center;
+                padding: 10px 0px 10px 0px;
+                margin-top: 60px;
+                position: sticky;
+                top: 100vh;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+                /* shadow effect on footer */
+            }
 
-        .content {
-            text-align: center;
-            margin-top: 60px;
-        }
+            .content {
+                text-align: center;
+                margin-top: 60px;
+            }
 
-        .message {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-		
-        .button {
-            background-color: #0f060e;
-            color: #f0a020; /* gold */
-            border: none;
-            padding: 12px 35px;
-            border-radius: 5px;
-            cursor: pointer;
-			text-decoration: none;
-			line-height: 1.2;
-			font-size: 16px;
-			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* shadow effect on button */
-			transition: background-color, color;
-			transition-timing-function: linear;
-			transition-duration: 150ms;
-        }
+            .message {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
 
-        .button:hover {
-            background-color: #132d4d; /* shade on hover */
-            color: #ffecb6;
-        }
-		
-		/* centered the header button */
-        .header-button {
-            display: flex;
-			flex-wrap: wrap;
-			gap: 10px;
-			padding: 15px 0px 15px 0px;
-            justify-content: center;
-        }
-		
-		.header-button a {
-			min-width: 70px;
-		}
-		
-		.title {
-            position: relative;
-			margin: 22px 0px 0px 0px;
-            font-size: 36px;
-            font-weight: bold;
-            color: #ffecb6;
-			text-align: center;
-            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* shadow effect on text */
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Brad Bush</h1>
-		<div class="header-button">
-            <a href="/" class="button">Home</a>
-            <a href="/about/" class="button">About</a>
-            <a href="/contact/" class="button">Contact</a>
+            .button {
+                background-color: #0f060e;
+                color: #f0a020;
+                /* gold */
+                border: none;
+                padding: 12px 35px;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+                line-height: 1.2;
+                font-size: 16px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                /* shadow effect on button */
+                transition: background-color, color;
+                transition-timing-function: linear;
+                transition-duration: 150ms;
+            }
+
+            .button:hover {
+                background-color: #132d4d;
+                /* shade on hover */
+                color: #ffecb6;
+            }
+
+            /* centered the header button */
+            .header-button {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                padding: 15px 0px 15px 0px;
+                justify-content: center;
+            }
+
+            .header-button a {
+                min-width: 70px;
+            }
+
+            .title {
+                position: relative;
+                margin: 22px 0px 0px 0px;
+                font-size: 36px;
+                font-weight: bold;
+                color: #ffecb6;
+                text-align: center;
+                text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+                /* shadow effect on text */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Brad Bush</h1>
+            <div class="header-button">
+                <a href="/" class="button">Home</a>
+                <a href="/about/" class="button">About</a>
+                <a href="/contact/" class="button">Contact</a>
+            </div>
+        </header>
+        <div class="title">404 Page Not Found</div>
+        <div class="content">
+            <p class="message">Oops! The page you are looking for does not exist.</p>
+            <a href="/" class="button">Go back to Home</a>
         </div>
-    </header>
-	
-	<div class="title">404 Page Not Found</div>
-	
-    <div class="content">
-        <p class="message">Oops! The page you are looking for does not exist.</p>
-        <a href="/" class="button">Go back to Home</a>
-    </div>
-
-    <footer>
-        &copy; 2023 Brad Bush. All rights reserved.
-    </footer>
-</body>
+        <footer> &copy; 2023 Brad Bush. All rights reserved. </footer>
+    </body>
 </html>
