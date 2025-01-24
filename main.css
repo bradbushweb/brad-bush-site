@@ -108,7 +108,7 @@ footer
 	background-color: #455161;
 	transform: scale(1.6);
 }
-.header-button
+.header-buttons
 {
 	display: flex;
 	flex-wrap: wrap;
@@ -116,7 +116,7 @@ footer
 	padding: 15px 0px 15px 0px;
 	justify-content: center;
 }
-.header-button a
+.header-buttons a
 {
 	min-width: 70px;
 }
