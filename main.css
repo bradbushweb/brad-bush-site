@@ -26,7 +26,7 @@ h1
 {
 	padding-top: 2px;
 	height: 57px;
-	font: normal bold 44px 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font: italic bold 44px 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	line-height: inherit;
 }
 h2
@@ -46,7 +46,7 @@ footer
 	padding-bottom: 10px;
 	width: 100%;
 	text-align: center;
-	color: #ffecb6;	
+	color: #ffecb6;
 }
 .button
 {
