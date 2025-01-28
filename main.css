@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-body, p, td
+body, p, td, th
 {
 	background-color: #151515;
 	min-height: 100vh;
